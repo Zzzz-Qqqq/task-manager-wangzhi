@@ -26,7 +26,7 @@
     "lint": "node ./scripts/lint.js",
     "precommit": "node scripts/hooks/run-precommit.js",
     "prepare": "chmod +x .githooks/pre-commit 2>/dev/null; git config core.hooksPath .githooks 2>/dev/null || true",
-    "postinstall": "fullstack-cli action-plugin init"
+    "build:vercel": "node scripts/vercel-build.js"
   },
   "dependencies": {
     "@lark-apaas/fullstack-nestjs-core": "^1.1.76",
